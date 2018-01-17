@@ -21,14 +21,16 @@ int main()
 		case 'f':
 			printf("Please enter your temperature in farenheit that you would like to convert: " );
 			scanf( "%d", &x );
+				/* This does the same as the operation above where it will retrieve the input from the user. */
 			x = (x - 32) * 5/9;
-			
+				/* This operation does the previous arithmetic operation, but in reverse. */
 		       	
 			printf( "The temperature in celsius will be %d", x );
 		break;
 
 		default:
 		printf("Please enter f or c.");
+		 		/* This is just to a catch to make sure that the user only inputs f or c. */
 		break;
 	}
 
